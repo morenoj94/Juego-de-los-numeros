@@ -1,0 +1,6 @@
+C:\Users\Jesus Moreno\Documents\Curso Programacion\NumberGame\GameLogic\bin\Debug\GameLogic.dll
+C:\Users\Jesus Moreno\Documents\Curso Programacion\NumberGame\GameLogic\bin\Debug\GameLogic.pdb
+C:\Users\Jesus Moreno\Documents\Curso Programacion\NumberGame\GameLogic\obj\Debug\GameLogic.csproj.AssemblyReference.cache
+C:\Users\Jesus Moreno\Documents\Curso Programacion\NumberGame\GameLogic\obj\Debug\GameLogic.csproj.CoreCompileInputs.cache
+C:\Users\Jesus Moreno\Documents\Curso Programacion\NumberGame\GameLogic\obj\Debug\GameLogic.dll
+C:\Users\Jesus Moreno\Documents\Curso Programacion\NumberGame\GameLogic\obj\Debug\GameLogic.pdb
