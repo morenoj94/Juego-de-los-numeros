@@ -21,6 +21,16 @@ namespace Front
         {
             InitializeComponent();
         }
+
+        private void txtCifras_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter) 
+            {
+                e.Handled = true;
+                btnAceptar_Click(sender, e);
+            }
+        }
+
         private void Principal_Load(object sender, EventArgs e)
         {
             // Hago que todos los labels dentro del panel de intentos
@@ -51,7 +61,6 @@ namespace Front
             posicion = 0;
             string cifras = string.Join("|", txtCifras.Text.ToCharArray());
 
-            
             if (intentos <= 10)
             {
                 logica.verificar(txtCifras.Text, ref asiertos, ref posicion);
@@ -61,7 +70,7 @@ namespace Front
                 if (etiqueta.Text == string.Empty)
                 {
                     etiqueta.Text = cifras;
-                    etiqueta .Visible = true;                    
+                    etiqueta.Visible = true;
                 }
                 string lblAsiertos = "lblAsiertos" + intentos;
                 string lblPosicion = "lblPosicion" + intentos;
@@ -77,6 +86,11 @@ namespace Front
                     etiqueta.Text = posicion.ToString();
                     etiqueta.Visible = true;
                 }
+                // elimino el contenido del cuadro de texto
+                txtCifras.Text = string.Empty;
+
+
+                // verifico si acerto los numeros
                 if (posicion == 4 && asiertos == 4)
                 {
                     lblValor.Visible = true;
@@ -96,10 +110,10 @@ namespace Front
                 Close();
             }
             intentos++;
-            
+
         }
 
 
-        
+
     }
 }

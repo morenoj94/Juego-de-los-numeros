@@ -489,6 +489,7 @@
             this.txtCifras.Name = "txtCifras";
             this.txtCifras.Size = new System.Drawing.Size(107, 30);
             this.txtCifras.TabIndex = 7;
+            this.txtCifras.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCifras_KeyPress);
             // 
             // lblValor
             // 

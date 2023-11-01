@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 namespace GameLogic
@@ -26,6 +27,7 @@ namespace GameLogic
             return txt;
         }
 
+
         public void verificar(string cifras, ref int aci, ref int pos)
         {
             nUsuario = cifras.Select(x => int.Parse(x.ToString())).ToArray();
@@ -38,12 +40,14 @@ namespace GameLogic
                         aci++;
                         if (i == j)
                         {
-                            pos++;
+                            pos++;                            
                         }
                     }
                 }
 
             }
         }
+
+
     }
 }
